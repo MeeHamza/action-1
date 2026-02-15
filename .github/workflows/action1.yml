@@ -1,0 +1,15 @@
+name: First workflow
+
+on: [push,fork]
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: welcom message
+              run: echo "this first message here"
+            - name: show folders
+              run: ls
+            - name: catting 
+              run: cat README.MD
+            
