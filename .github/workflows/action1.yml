@@ -7,7 +7,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: welcom message
-              run: echo "this first message here"
+              uses: actions/checkout@v6
             - name: show folders
               run: ls
             - name: catting 
